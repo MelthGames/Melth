@@ -4,9 +4,11 @@
     "dev": "node index.js"
   },
   "dependencies": {
+    "canvas": "^2.11.0",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "mongoose": "^6.8.4",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "twisted": "^1.52.1"
   }
 }

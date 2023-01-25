@@ -1,5 +1,8 @@
 const Client = require('./src/bot.js')
 const bot = new Client()
+// const { LolClient } = require('./src/utils/LeagueOfLegends.js')
+
+// LolClient(bot)
 
 bot.on('messageCreate', async message => {
     //message.channel.send("si")
@@ -22,7 +25,8 @@ bot.on('messageCreate', async message => {
     //     console.log(bot)
     // })
     console.log(slash)
-    bot.application?.commands.set(slash)
+    // bot.application?.commands.set(slash)
+    bot.guilds.cache.get("871286464472817734")?.commands.set(slash)
     .catch(err => console.log(err))
     .then(console.log)
     // message.channel.send('comandos setiado')

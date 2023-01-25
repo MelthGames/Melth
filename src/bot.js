@@ -1,7 +1,8 @@
 const { Client, Collection, Options, GatewayIntentBits } = require('discord.js');
 const mongoose = require('mongoose');
 const Util = require('./utils/index.js')
-
+const { LolClient } = require('./utils/LeagueOfLegends.js')
+// console.log(LolClient())
 require("dotenv").config();
 const token = process.env.token
 
@@ -26,6 +27,7 @@ module.exports = class Melth extends Client{
         this.events = new Collection()
         this.slashCommands = new Collection()
         this.utils = new Util(this)
+        this.lol = LolClient()
     }
 
     async start(){
