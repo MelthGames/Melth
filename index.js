@@ -2,7 +2,7 @@ const Client = require('./src/bot.js')
 const bot = new Client()
 // const { LolClient } = require('./src/utils/LeagueOfLegends.js')
 
-// LolClient(bot)
+LolClient(bot)
 
 bot.on('messageCreate', async message => {
     //message.channel.send("si")
